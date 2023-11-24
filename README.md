@@ -1,1 +1,1 @@
-# -practica2_LLM
+# practica2_LLM
