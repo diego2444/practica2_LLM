@@ -1,4 +1,11 @@
 /*estilos generales*/
+:root {
+    --color-1:#44194a;
+    --color-2: #ba5a9f;
+    --color-3: #e1ff00;
+    --color-4: #fbffe0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +25,7 @@ nav a {
 nav a:hover {
     font-size: 24px;
     font-weight: 600;
-    color: #ba5a9f;
+    color: var(--color-2);
 }
 nav li {
     font-size: 20px;
@@ -41,7 +48,6 @@ nav ul {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -127,10 +133,10 @@ header img { /*imagen de la portada index*/
 }
 
 .portada quote { /*frase de la portada index*/
-    color: #ba5a9f;
-    background-color:#44194a;
-    width: 10rem;
-    flex-basis: 40%;
+    color: var(--color-4);
+    background-color: var(--color-1);
+    max-width: 25rem;
+    flex-basis: 50%;
     padding: 3rem;
     clip-path: polygon(1% 24%, 99% 26%, 99% 75%, 14% 77%, 0 100%, 7% 76%, 1% 75%);
 }
@@ -138,19 +144,21 @@ header img { /*imagen de la portada index*/
 
 /*section index*/
 section {
-    color: #ba5a9f;
+    color: var(--color-4);
     text-align: center;
  }
 
 section hr {
     width: 60%;
     margin: auto;
-    color: #ba5a9f;
-    box-shadow: #ba5a9f 0px 0px 30px;
+    color: var(--color-2);
+    box-shadow: var(--color-2) 0px 0px 30px;
 }
 
 section h3 {
     font-size: 4rem;
+    font-weight: 300;
+    color: var(--color-3);
 }
 
 .resumen {
@@ -160,13 +168,14 @@ section h3 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 1rem;
+    gap: 1rem 0;
+    line-height: 2.5rem;
 }
 
 .resumen img {
     max-width: 20rem;
     flex-basis: 60%;
-    border: 2px dashed #ba5a9f;
+    border: 2px dashed var(--color-2);
 }
 
 .resumen p:first-of-type {
@@ -176,14 +185,14 @@ section h3 {
 .resumen p {
     flex-basis: 40%;
     max-width: 35rem;
-    font-size: 18px;
-    background-color: #44194a60;
+    font-size: 20px;
+    background-color: var(--color-1);
     padding: 3rem;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 /*footer*/
 footer {
-    color: #ba5a9f;
+    color: var(--color-2);
     text-align: center;
     margin: 1rem;
 }
