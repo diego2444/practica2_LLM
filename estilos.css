@@ -70,59 +70,58 @@ header h1 span { /*apellido*/
 @keyframes mover { /*animacion nombre*/
     0% {
       text-shadow:
-        3px -3px 0 rgb(132, 74, 145), 
-        2px -2px 0 rgb(132, 74, 145), 
-        1px -1px 0 rgb(132, 74, 145), 
-        0px 0px 0 rgb(132, 74, 145),
-        -3px 3px 0 rgb(176, 36, 136), 
-        -3px 3px 0 rgb(176, 36, 136), 
-        -2px 2px 0 rgb(176, 36, 136), 
-        -1px 1px 0 rgb(176, 36, 136);
+        3px -3px 0 var(--color-1), 
+        2px -2px 0 var(--color-1), 
+        1px -1px 0 var(--color-1), 
+        0px 0px 0 var(--color-1),
+        -3px 3px 0  var(--color-3), 
+        -3px 3px 0 var(--color-3), 
+        -2px 2px 0  var(--color-3), 
+        -1px 1px 0  var(--color-3);
     }
     25% {    
       text-shadow:      
-        -3px -3px 0 rgb(176, 36, 136), 
-        -2px -2px 0 rgb(176, 36, 136), 
-        -1px -1px 0 rgb(176, 36, 136), 
-        0px 0px 0 rgb(176, 36, 136),
-        3px 3px 0 rgb(132, 74, 145), 
-        2px 2px 0 rgb(132, 74, 145), 
-        1px 1px 0 rgb(132, 74, 145), 
-        0px 0px 0 rgb(132, 74, 145);
+        -3px -3px 0 var(--color-3), 
+        -2px -2px 0 var(--color-3), 
+        -1px -1px 0 var(--color-3), 
+        0px 0px 0 var(--color-3),
+        3px 3px 0 var(--color-1), 
+        2px 2px 0 var(--color-1), 
+        1px 1px 0 var(--color-1), 
+        0px 0px 0 var(--color-1);
     }
     50% {
       text-shadow:
-        -3px 3px 0 rgb(132, 74, 145), 
-        -2px 2px 0 rgb(132, 74, 145), 
-        -1px 1px 0 rgb(132, 74, 145), 
-        0px 0px 0 rgb(132, 74, 145),
-        3px -3px 0 rgb(176, 36, 136), 
-        2px -2px 0 rgb(176, 36, 136), 
-        1px -1px 0 rgb(176, 36, 136), 
-        0px 0px 0 rgb(176, 36, 136)
-      ;
+        -3px 3px 0 var(--color-1), 
+        -2px 2px 0 var(--color-1), 
+        -1px 1px 0 var(--color-1), 
+        0px 0px 0 var(--color-1),
+        3px -3px 0 var(--color-2), 
+        2px -2px 0 var(--color-2), 
+        1px -1px 0 var(--color-2), 
+        0px 0px 0 var(--color-2);
     }
     75% {
       text-shadow:
-        3px 3px 0 rgb(176, 36, 136), 
-        2px 2px 0 rgb(176, 36, 136), 
-        1px 1px 0 rgb(176, 36, 136), 
-        0px 0px 0 rgb(176, 36, 136),
-        -3px -3px 0 rgb(132, 74, 145), 
-        -2px -2px 0 rgb(132, 74, 145), 
-        -1px -1px 0 rgb(132, 74, 145), 
-        0px 0px 0 rgb(132, 74, 145);
+        3px 3px 0 var(--color-3), 
+        2px 2px 0 var(--color-3), 
+        1px 1px 0 var(--color-3), 
+        0px 0px 0 var(--color-3),
+        -3px -3px 0 var(--color-1), 
+        -2px -2px 0 var(--color-1), 
+        -1px -1px 0 var(--color-1), 
+        0px 0px 0 var(--color-1);
     }
     100% {
       text-shadow:
-        3px -3px 0 rgb(132, 74, 145), 
-        2px -2px 0 rgb(132, 74, 145), 
-        1px -1px 0 rgb(132, 74, 145), 
-        0px -0px 0 rgb(132, 74, 145),
-        -3px 3px 0 rgb(176, 36, 136), 
-        -2px 2px 0 rgb(176, 36, 136), 
-        -1px 1px 0 rgb(176, 36, 136), 
-        0px 0px 0 rgb(176, 36, 136);
+        3px -3px 0 var(--color-1), 
+        2px -2px 0 var(--color-1), 
+        1px -1px 0 var(--color-1), 
+        0px -0px 0 var(--color-1),
+        -3px 3px 0 var(--color-2), 
+        -2px 2px 0 var(--color-2), 
+        -1px 1px 0 var(--color-2), 
+        0px 0px 0 var(--color-2);
     }  
   }
 
@@ -133,8 +132,8 @@ header img { /*imagen de la portada index*/
 }
 
 .portada quote { /*frase de la portada index*/
-    color: var(--color-4);
-    background-color: var(--color-1);
+    color: var(--color-1);
+    background-color: var(--color-3);
     max-width: 25rem;
     flex-basis: 50%;
     padding: 3rem;
@@ -159,6 +158,7 @@ section h3 {
     font-size: 4rem;
     font-weight: 300;
     color: var(--color-3);
+    text-shadow: var(--color-1) 10px 0;
 }
 
 .resumen {
@@ -194,7 +194,7 @@ section h3 {
 footer {
     color: var(--color-2);
     text-align: center;
-    margin: 1rem;
+    margin: 5rem 1rem 1rem 1rem;
 }
 
 /*medias*/
@@ -219,3 +219,4 @@ footer {
         gap: 5rem;
     }
 }
+
