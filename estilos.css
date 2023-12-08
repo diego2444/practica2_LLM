@@ -18,28 +18,43 @@ body {
 }
 
 /*estilos del nav*/
-nav a {
+nav li a {
     text-decoration: none;
-    color: white;
+    color: var(--color-1);
+    padding: 0 1rem;
 }
-nav a:hover {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--color-2);
+nav li:hover {
+    transition: 0.3s;
+    border: 1px solid var(--color-1);
+    background-color: var(--color-1);
+    animation: aaa 1s infinite;
+}
+nav li a:hover {
+    color: var(--color-4);
+}
+@keyframes aaa { /*animacion del nav*/
+    0% {
+        box-shadow: var(--color-3) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    }
+    100%{
+        box-shadow: var(--color-3) 0px 0px, rgba(240, 46, 170, 0.3) 5px 5px, rgba(240, 46, 170, 0.2) 10px 10px, rgba(240, 46, 170, 0.1) 15px 15px, rgba(240, 46, 170, 0.05) 20px 20px;
+
+    }
 }
 nav li {
+    border: 1px solid var(--color-3);
     font-size: 20px;
     margin: 1rem;
     list-style: none;
-    height: 3rem;
-    width: 10rem;
     text-align: center;
+    background-color: var(--color-3);
+    box-shadow: var(--color-3) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 nav ul {
     display: flex;
     justify-content: flex-end;
-    padding: 0 2rem;
+    margin: 1rem;
 }
 
 /*estilos portada (el resto del header)*/
@@ -364,16 +379,17 @@ button a:hover {
 }
 .tipos h4 {
     flex-basis: 100%;
-    margin: 1rem;
-    padding: 2rem;
-    color: var(--color-2);
+    margin: 2rem;
+    padding: 1rem;
+    color: var(--color-4);
     font-size: 24px;
     background-color: var(--color-1);
+    border-bottom: 5px solid var(--color-3);
 }
 .obra {
     width: 16rem;
     height: 29rem;
-    border: 1px solid var(--color-2);
+    border: 1px solid var(--color-4);
     padding: 1rem;
     flex-direction: row;
     margin: 1rem auto;
@@ -384,13 +400,22 @@ button a:hover {
     margin: .5rem;
     font-size: 14px;
 }
-
+.obra p b {
+    font-size: 18px;
+    border-bottom: 1px solid var(--color-4);
+}
 .obra img {
     width: 7rem;
 }
 
 /*-----media queries-----*/
 @media only screen and (max-width: 1100px) {
+
+    nav ul {
+        display: flex;
+        justify-content:center;
+        margin: 2rem;
+    }
 
     .resumen p {
         clip-path: none;
@@ -471,3 +496,30 @@ button a:hover {
     }
 }
 
+@media only screen and (max-width: 570px) {
+    h1 {
+        font-size: 30px;
+        height: auto;
+    }
+
+    header img {
+        height: 21rem;
+        width: auto;
+    }
+    section h3 {
+        font-size: 26px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .resumen p:first-of-type {
+        clip-path: none;
+    }
+
+    .resumen p {
+        font-size: 18px;
+        padding: 1rem;
+    }
+}
