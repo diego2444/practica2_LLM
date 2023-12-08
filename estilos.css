@@ -1,4 +1,5 @@
 /*estilos generales*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 :root {
     --color-1:#44194a;
     --color-2: #ba5a9f;
@@ -11,7 +12,6 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
 }
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
 body {
     background-color: black;
@@ -146,7 +146,7 @@ header img { /*imagen de la portada index*/
 
 }
 
-.portada quote { /*frase de la portada index*/
+.portada p { /*frase de la portada index*/
     color: var(--color-1);
     background-color: var(--color-3);
     max-width: 25rem;
@@ -238,7 +238,10 @@ footer {
     width: 30%;
     height: 30%;
 }
-
+article h3 {
+    font-size: 24px;
+    margin: 1rem 0 -1rem 0;
+}
 article ul {
     border-top: 0.5rem solid var(--color-2);
     text-align: center;
@@ -285,11 +288,11 @@ article span {
     margin-left: -0.5rem;
     position: absolute;
 }
-button {
+.boton {
     all: unset;
     margin-top: 5rem;
 }
-button a {
+.boton {
     background-color: var(--color-2);
     color: var(--color-1);
     border: 2px solid var(--color-4);
@@ -299,7 +302,7 @@ button a {
     font-weight: 600;
 }
 
-button a:hover {
+.boton:hover {
         background-color: rgb(255, 151, 226);
         box-shadow: 4px 4px 0 var(--color-3);
         transition: 0.3s;
@@ -324,14 +327,18 @@ button a:hover {
     color: var(--color-2);
     padding: 1rem;
     border-bottom: 1rem solid var(--color-2);
+    margin: auto;
 }
-#contenido_p quote {
+h6 {
+    font-size: 16px;
+    font-weight: 300;
     background-color: var(--color-4);
     border-left: .5rem solid var(--color-2);
     width: 70%;
     margin: 2rem auto;
     padding: 0.5rem;
     color: var(--color-1);
+    border-bottom: none;
 }
 
 #contenido_p img {
@@ -343,7 +350,7 @@ button a:hover {
 #contenido_p div:first-of-type {
     flex-basis: 100%;
 }
-.pensamientos h1 {
+.pensamientos h5 {
     font-size: 20px;
     height: auto;
     padding: 1rem;;
@@ -357,15 +364,17 @@ button a:hover {
     flex-basis: 50%;
 }
 
-.pensamientos h1:first-child {
+.pensamientos h5:first-child {
     margin-right: 1rem;
 }
-.pensamientos h1 a{
+.pensamientos h5 a{
     text-decoration: none;
-    color: var(--color-3);
+    color: var(--color-4);
 }
-.pensamientos h1 a:hover {
+.pensamientos h5 a:hover {
     color: var(--color-2);
+    transform:scale(1.5);
+    transition: .3s;
 }
 /*estilos especiales de la página "obras"*/
 #obras {
@@ -521,5 +530,8 @@ button a:hover {
     .resumen p {
         font-size: 18px;
         padding: 1rem;
+    }
+    .pensamientos {
+       width: auto;
     }
 }
