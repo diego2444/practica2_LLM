@@ -201,7 +201,6 @@ footer {
 }
 
 /*estilos especiales pagina "vida" (selector article reservado para esta pagina)*/
-
 #vida {
     width: 50rem;
     margin: auto;
@@ -290,7 +289,68 @@ button a:hover {
         box-shadow: 4px 4px 0 var(--color-3);
         transition: 0.3s;
 }
+/*estilos especiales página de "pensamiento*/
+#contenido_p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 3rem auto;
+    line-height: 1.5rem;
+}
+#contenido_p p:first-child {
+    background-color: var(--color-1);
+    color: var(--color-4);
+    height: auto;
+    box-shadow: none;
+    border-bottom: none;
+}
+#contenido_p p {
+    color: var(--color-2);
+    padding: 1rem;
+    border-bottom: 1rem solid var(--color-2);
+}
+#contenido_p quote {
+    background-color: var(--color-4);
+    border-left: .5rem solid var(--color-2);
+    width: 70%;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    color: var(--color-1);
+}
 
+#contenido_p img {
+    height: auto;
+    width: 40%;
+    margin: 1rem;
+}
+
+#contenido_p div:first-of-type {
+    flex-basis: 100%;
+}
+.pensamientos h1 {
+    font-size: 20px;
+    height: auto;
+    padding: 1rem;;
+    background-color: var(--color-1);
+    box-shadow: var(--color-3) 0 5px, rgba(240, 46, 170, 0.3) 0 10px, rgba(240, 46, 170, 0.2) 0 15px, rgba(240, 46, 170, 0.1) 0 20px, rgba(240, 46, 170, 0.05) 0 25px;
+    margin-bottom: 1rem;
+}
+
+.pensamientos {
+    width: 30rem;
+    flex-basis: 50%;
+}
+
+.pensamientos h1:first-child {
+    margin-right: 1rem;
+}
+.pensamientos h1 a{
+    text-decoration: none;
+    color: var(--color-3);
+}
+.pensamientos h1 a:hover {
+    color: var(--color-2);
+}
 
 
 /*medias*/
@@ -346,6 +406,18 @@ button a:hover {
         width: auto;
     }
 
+    #contenido_p {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contenido_p p {
+        margin: 1rem;
+    }
+    #contenido_p img {
+        width: 80%;
+    }
 
 
 }
