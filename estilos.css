@@ -76,7 +76,6 @@ h1 { /*bloque nombre*/
     animation: mover linear 3000ms infinite;
     flex-basis: 100%;
 }
-
 header h1 span { /*apellido*/
     display: block;
     font-size: 40px;
