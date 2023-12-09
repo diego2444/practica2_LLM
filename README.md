@@ -1,4 +1,5 @@
-# practica2_LLM
+# B2 - Pàgina Web Responsive
+## Pràctica de Llenguatge de Marques
 
 **Tasca:** Dissenyar i desenvolupar un lloc web *responsive* utilitzant HTML i CSS.
 
