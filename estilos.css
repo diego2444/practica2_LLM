@@ -496,10 +496,12 @@ h6 {
 
 @media only screen and (min-width: 1730px) {
     .resumen {
-        flex-wrap: nowrap;
         gap: 5rem;
     }
 
+    .resumen p:first-of-type {
+        margin: 0;
+    }
     article li {
         width: 7rem;
     }
